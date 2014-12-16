@@ -5,6 +5,7 @@ Class MainWindow
 
 
     Dim cnn As New ADODB.Connection
+
     Dim rst As New ADODB.Recordset
 
 
@@ -17,6 +18,7 @@ Class MainWindow
         rst.MoveFirst()
         Do While Not rst.EOF
 
+            'hey now
             Debug.Print(rst("MRN").Value)
             rst.MoveNext()
 
